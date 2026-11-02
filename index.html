@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1F1030">
+<title>For Sulaiman ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-s="0">
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="rose" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+    <path d="M50 44c6-2 10 3 7 12s-12 5-15-2 4-16 14-15 17 9 14 21-16 17-27 12"/><path d="M30 70c-8 8-14 18-16 28M36 78c-9-2-18 2-24 8M48 84c0-9 6-16 14-20"/></g></symbol>
+  <symbol id="heart" viewBox="0 0 32 29"><path d="M16 28C5 20 0 14 0 8a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 6-5 12-16 20z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<div id="bg"><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i></div>
+<div id="fx" aria-hidden="true"></div>
+<svg class="rose tl"><use href="#rose"/></svg><svg class="rose br"><use href="#rose"/></svg>
+
+<!-- One persistent audio element: never inside a screen -->
+<audio id="bgm" src="bg.mp3" preload="auto" playsinline></audio>
+<button id="mus" aria-label="Play or pause music" hidden><span></span><span></span><span></span></button>
+<div id="dev" hidden></div>
+
+<main>
+  <section class="scr active" data-n="0">
+    <svg class="bigheart"><use href="#heart"/></svg>
+    <h1 class="r" style="--d:.5s">To My Favourite Person ❤️</h1>
+    <p class="r msg" style="--d:1.8s">Some people are so beautiful that words could never explain them. And then there’s you, Sulaiman. I wanted to create something special just to remind you how precious you are to me.</p>
+    <p class="r sub" style="--d:3.4s">Tonight, this little surprise is all yours. ♡</p>
+    <button class="btn r" id="open" style="--d:4.4s">Open Your Surprise ✨</button>
+  </section>
+
+  <section class="scr" data-n="1">
+    <h1 class="r" style="--d:.6s">For You, Sulaiman ♡</h1>
+    <p class="r msg" style="--d:1.8s">If I could turn my feelings into something you could see, it would look a little like this...</p>
+    <button class="btn r" id="more" style="--d:3.2s">There’s More for You →</button>
+  </section>
+
+  <section class="scr" data-n="2">
+    <div class="halo"></div>
+    <p id="lyric" aria-live="polite"></p>
+    <div class="lyrbar">
+      <div id="dots"></div>
+      <div class="row"><button class="ghost" id="replay">↺ Replay</button><button class="ghost" id="next">Next Line →</button></div>
+    </div>
+  </section>
+
+  <section class="scr" data-n="3">
+    <div class="heartwrap"><b></b><b></b><svg class="bigheart"><use href="#heart"/></svg></div>
+    <h1 class="r" style="--d:.8s">And If I Could Choose Again...</h1>
+    <p class="r msg" style="--d:2.4s">It would still be you, Sulaiman. In every lifetime, in every version of my story, I would find my way back to you. ❤️</p>
+    <p class="r sub gold" style="--d:4.6s">You are my favourite feeling. Always. ♾️</p>
+    <p class="r tiny" style="--d:6s">Made with a little code and a whole lot of love. ♡</p>
+    <button class="btn r" id="again" style="--d:7s">Experience It Again ↻</button>
+  </section>
+</main>
+<div id="veil"></div>
+<script src="script.js"></script>
+</body>
+</html>
